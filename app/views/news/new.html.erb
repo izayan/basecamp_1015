@@ -1,0 +1,84 @@
+<%= stylesheet_link_tag "news/new", :media => "all" %>
+<%= javascript_include_tag 'fonts.js' %>
+<header id="header">
+  <div class="header__inner">
+    <nav class="header__nav"><a href="/">
+        <h1 class="header__nav--logo" id="nav__logo"><img src="/img/footer_logo.svg" alt="1015 BASE CAMP"/></h1></a>
+      <ul class="header__nav--list">
+        <li><a href="/">TOP</a></li>
+        <li><a href="/news/">NEWS</a></li>
+        <li><a href="/menu/">MENU</a></li>
+        <li><a href="/form/">RESERVE</a></li>
+        <li><a href="https://ec.10-15.jp/">ONLINE</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="under-layer__head">
+  <div class="under-layer__inner">
+    <h2 class="under-layer__title">NEWS POST</h2>
+  </div>
+</div>
+<div class="main posts-new">
+  <div class="container">
+    <div class="new">
+      <div class="new__inner">
+        <h3 class="new__title">ニュース投稿ページ</h3>
+        <p class="new__text">
+          ニュース投稿用のフォーラムです。<br>
+          タイトルを書き、カテゴリーを選び、内容を書いてください。
+        </p>
+        <%= form_tag("/news/create") do%>
+          <div class="form__inner">
+            <div class="title">
+              <label for="title">1.タイトルをご記入ください。</label>
+              <input name="title">
+            </div>
+            <div class="category">
+              <label for="category">2.カテゴリーをお選びください</label>
+              <select type="text" name="category">
+                <option value="お知らせ">お知らせ</option>
+                <option value="イベント">イベント</option>
+                <option value="カレンダー">カレンダー</option>
+              </select>
+            </div>
+            <div class="content">
+              <label for="content">3.内容をご記入ください。</label>
+              <textarea name="content"></textarea>
+            </div>
+            <div class="submit">
+              <input type="submit" value="投稿">
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="footer__inner">
+    <div class="footer__info">
+      <h3 class="footer__shopname">1015 BASE CAMP</h3>
+      <p class="footer__address">兵庫県西宮市豊楽町5－25三幸マンション1階</p>
+      <p class="footer__hours">17:00~23:30(LO:22:45)</p>
+    </div>
+    <div class="footer__logo">
+      <h2 class="logo--image"><a href="/"><img src="/img/footer_logo.svg"/></a></h2>
+      <p class="logo--copyright">© 2019 1015 BASE CAMP inc.</p>
+    </div>
+    <nav class="footer__nav">
+      <ul class="footer__nav--list">
+        <li><a href="/">TOP</a></li>
+        <li><a href="/news/">NEWS</a></li>
+        <li><a href="/">MENU</a></li>
+        <li><a href="/form/">RESERVE</a></li>
+        <li><a href="https://ec.10-15.jp/">ONLINE</a></li>
+      </ul>
+      <ul class="footer__sns-icons">
+        <li><a href="https://www.instagram.com/1015_kurakuenn/"></a></li>
+        <li><a href="https://twitter.com/jyunojyugo"></a></li>
+        <li><a href="https://www.facebook.com/%E3%83%90%E3%83%BC%E3%83%99%E3%82%AD%E3%83%A5%E3%83%BC%E6%96%99%E7%90%86bbq-BASE-Camp-%E8%8B%A6%E6%A5%BD%E5%9C%92%E5%BA%97-813785151976323/"></a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>

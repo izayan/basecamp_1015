@@ -1,0 +1,69 @@
+<%= stylesheet_link_tag "news/news", :media => "all" %>
+<%= javascript_include_tag 'fonts.js' %>
+<main id="news_show">
+  <header id="header">
+    <div class="header__inner">
+      <nav class="header__nav"><a href="/">
+          <h1 class="header__nav--logo" id="nav__logo"><img src="/img/footer_logo.svg" alt="1015 BASE CAMP"/></h1></a>
+        <ul class="header__nav--list">
+          <li><a href="/">TOP</a></li>
+          <li><a href="/news/">NEWS</a></li>
+          <li><a href="/menu/">MENU</a></li>
+          <li><a href="/form/">RESERVE</a></li>
+          <li><a href="https://ec.10-15.jp/">ONLINE</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="under-layer__head">
+    <div class="under-layer__inner">
+      <h2 class="under-layer__title">NEWS</h2>
+    </div>
+  </div>
+  <div class="news__page">
+    <p class="news__top"><a href="/news/">← NEWS ALL</a></p>
+    <div class="page__inner">
+      <div class="page__head">
+        <p class="page__date">
+          <%= @post.updated_at.strftime("%Y.%m.%d") %>
+        </p>
+        <h3 class="page__title">
+          <%= @post.title %>
+        </h3>
+      </div>
+      <div class="page__content">
+        <% content = safe_join(@post.content.split("\n"), tag(:br))%>
+        <%= simple_format(h(content)) %>
+      </div>
+    </div>
+    <p class="news__top"><a href="/news/">← NEWS ALL</a></p>
+  </div>
+  <footer>
+    <div class="footer__inner">
+      <div class="footer__info">
+        <h3 class="footer__shopname">1015 BASE CAMP</h3>
+        <p class="footer__address">兵庫県西宮市豊楽町5－25三幸マンション1階</p>
+        <p class="footer__hours">17:00~23:30(LO:22:45)</p>
+      </div>
+      <div class="footer__logo">
+        <h2 class="logo--image"><a href="/"><img src="/img/footer_logo.svg"/></a></h2>
+        <p class="logo--copyright">© 2019 1015 BASE CAMP inc.</p>
+      </div>
+      <nav class="footer__nav">
+        <ul class="footer__nav--list">
+          <li><a href="/">TOP</a></li>
+          <li><a href="/news/">NEWS</a></li>
+          <li><a href="/">MENU</a></li>
+          <li><a href="/form/">RESERVE</a></li>
+          <li><a href="https://ec.10-15.jp/">ONLINE</a></li>
+        </ul>
+        <ul class="footer__sns-icons">
+          <li><a href="https://www.instagram.com/1015_kurakuenn/"></a></li>
+          <li><a href="https://twitter.com/jyunojyugo"></a></li>
+          <li><a href="https://www.facebook.com/%E3%83%90%E3%83%BC%E3%83%99%E3%82%AD%E3%83%A5%E3%83%BC%E6%96%99%E7%90%86bbq-BASE-Camp-%E8%8B%A6%E6%A5%BD%E5%9C%92%E5%BA%97-813785151976323/"></a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</main>
+<%= javascript_include_tag 'under-layer_head.js' %>

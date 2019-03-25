@@ -1,0 +1,983 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+html {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+q,
+blockquote {
+  quotes: none;
+}
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+  content: none;
+}
+a img {
+  border: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+img {
+  vertical-align: bottom;
+  border: none;
+}
+button,
+input,
+select,
+textarea {
+  vertical-align: middle;
+}
+input {
+  outline: 0;
+}
+button,
+input {
+  *overflow: visible;
+  line-height: normal;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+label,
+select,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+input[type="radio"],
+input[type="checkbox"] {
+  cursor: pointer;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  font-family: sans-serif;
+}
+a {
+  color: inherit;
+}
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-o-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-moz-keyframes fadeout--animation {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    position: absolute;
+    z-index: -10;
+  }
+}
+@-webkit-keyframes fadeout--animation {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    position: absolute;
+    z-index: -10;
+  }
+}
+@-o-keyframes fadeout--animation {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    position: absolute;
+    z-index: -10;
+  }
+}
+@keyframes fadeout--animation {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    position: absolute;
+    z-index: -10;
+  }
+}
+@-moz-keyframes down {
+  from {
+    top: 0;
+  }
+  to {
+    top: 10px;
+  }
+}
+@-webkit-keyframes down {
+  from {
+    top: 0;
+  }
+  to {
+    top: 10px;
+  }
+}
+@-o-keyframes down {
+  from {
+    top: 0;
+  }
+  to {
+    top: 10px;
+  }
+}
+@keyframes down {
+  from {
+    top: 0;
+  }
+  to {
+    top: 10px;
+  }
+}
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-o-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-moz-keyframes trans_up {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(0px, -50px);
+  }
+}
+@-webkit-keyframes trans_up {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(0px, -50px);
+  }
+}
+@-o-keyframes trans_up {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(0px, -50px);
+  }
+}
+@keyframes trans_up {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(0px, -50px);
+  }
+}
+@-moz-keyframes trans_down {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(0px, 50px);
+  }
+}
+@-webkit-keyframes trans_down {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(0px, 50px);
+  }
+}
+@-o-keyframes trans_down {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(0px, 50px);
+  }
+}
+@keyframes trans_down {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(0px, 50px);
+  }
+}
+@-moz-keyframes trans_big {
+  0% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes trans_big {
+  0% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-o-keyframes trans_big {
+  0% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes trans_big {
+  0% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-moz-keyframes trans_deg {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(5deg);
+  }
+  66% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes trans_deg {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(5deg);
+  }
+  66% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@-o-keyframes trans_deg {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(5deg);
+  }
+  66% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes trans_deg {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(5deg);
+  }
+  66% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.cf:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  font-size: 62.5%;
+}
+body {
+  min-height: 100%;
+  height: 100%;
+  font-family: "ヒラギノ角ゴ ProN W3", 'Hiragino Kaku Gothic ProN', "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
+}
+main {
+  width: 100%;
+  background: url("/img/lp__bg.jpg");
+}
+.mv {
+  margin-bottom: 80px;
+  padding: 40px 0;
+  width: 100%;
+}
+.mv .mv__inner {
+  position: relative;
+  margin: 0 auto;
+  width: 95%;
+  height: 754px;
+}
+.mv .mv__inner .mv__meat {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.mv .mv__inner .mv__meat .mv__meat--1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: auto;
+  width: 587px;
+  height: 444px;
+  background: url("/img/lp-meat1.png") no-repeat;
+}
+.mv .mv__inner .mv__meat .mv__meat--2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 421px;
+  height: 666px;
+  background: url("/img/lp-meat2.png") no-repeat;
+}
+.mv .mv__inner .mv__meat .mv__meat--3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto auto 0;
+  width: 1043px;
+  height: 702px;
+  background: url("/img/lp-meat3.png") no-repeat;
+}
+.mv .mv__inner .mv__meat .mv__meat--4 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  height: 754px;
+  background: url("/img/smoke.png") no-repeat;
+}
+.mv .mv__inner .mv__copy {
+  font-family: fot-matisse-pron, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #fff;
+}
+.mv .mv__inner .mv__copy .mv__copy--title {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 32px;
+}
+.mv .mv__inner .mv__copy .mv__copy--title em {
+  font-size: 52px;
+}
+.mv .mv__inner .mv__copy .mv__copy--title strong {
+  font-size: 115px;
+}
+.mv .mv__inner .mv__copy .mv__copy--text {
+  position: absolute;
+  right: 90px;
+  top: 150px;
+  writing-mode: vertical-rl;
+  font-size: 32px;
+}
+.mv .mv__inner .mv__copy .mv__copy--text p:last-child {
+  margin-top: 90px;
+}
+.mv .mv__inner .mv__copy .mv__copy--text span {
+  text-combine-upright: all;
+}
+.description {
+  margin-bottom: 102px;
+  padding: 40px 0;
+  width: 100%;
+}
+.description .description__inner {
+  height: 715px;
+  margin: 0 auto;
+  width: 984px;
+  font-family: fot-matisse-pron, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #fff;
+  writing-mode: vertical-rl;
+}
+.description .description__inner .description__title {
+  margin-left: 68px;
+  font-size: 65px;
+}
+.description .description__inner .description__text {
+  margin-left: 27px;
+  font-size: 35px;
+  line-height: 110px;
+}
+.description .description__inner .description__signature {
+  font-size: 30px;
+  text-align: right;
+}
+.happy {
+  position: relative;
+  padding: 40px 0;
+  width: 100%;
+}
+.happy .happy__inner {
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
+  height: 738px;
+  color: #fff;
+}
+.happy .happy__inner .happy__title {
+  position: relative;
+  z-index: 10;
+  font-family: fot-matisse-pron, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 40px;
+}
+.happy .happy__inner .happy__title strong {
+  font-size: 65px;
+}
+.happy .happy__inner .happy__text {
+  position: relative;
+  z-index: 10;
+  margin: 35px 0 0 60px;
+  width: 510px;
+  font-family: YuGothic, 'Yu Gothic', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+}
+.happy .happy__inner .happy__visual {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 953px;
+  height: 738px;
+}
+.happy .happy__inner .happy__visual--fire {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 948px;
+  height: 484px;
+  background: url("/img/fire.png");
+}
+.happy .happy__inner .happy__visual--meat {
+  position: absolute;
+  right: 111px;
+  bottom: 0;
+  width: 799px;
+  height: 468px;
+  background: url("/img/meat.png");
+}
+.happy .happy__inner .happy__visual--human {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 499px;
+  height: 590px;
+  background: url("/img/human.png");
+}
+.happy .happy__inner .happy__visual--happy {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 278px;
+  height: 290px;
+  background: url("/img/happy.png");
+}
+.message {
+  width: 100%;
+}
+.message .message__inner .message__title {
+  margin: 128px 0;
+  padding: 205px 0;
+  text-align: center;
+  font-family: fot-matisse-pron, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 75px;
+  color: #fff;
+}
+.message .message__inner .message__title strong {
+  font-size: 100px;
+}
+.about {
+  width: 100%;
+  height: 880px;
+  background: url("/img/bg_white.png");
+}
+.about .about__inner {
+  margin: 0 auto;
+  padding: 196px 0 0;
+  width: 640px;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: fot-matisse-pron, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.about .about__inner .about__title {
+  margin-bottom: 36px;
+  font-size: 25px;
+  line-height: 60px;
+}
+.about .about__inner .about__title strong {
+  font-size: 80px;
+}
+.about .about__inner .about__planning {
+  margin-bottom: 15px;
+  font-size: 50px;
+}
+.about .about__inner .about__shopname {
+  margin-bottom: 24px;
+  font-size: 30px;
+}
+.about .about__inner .about__date {
+  margin-bottom: 36px;
+  font-size: 20px;
+}
+.about .about__inner .about__date strong {
+  font-size: 30px;
+}
+.about .about__inner .about__prices .about__price {
+  margin: 0 auto;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+.about .about__inner .about__prices .about__price:first-child {
+  margin-bottom: 24px;
+}
+.about .about__inner .about__prices .about__price strong {
+  font-size: 30px;
+}
+.about .about__inner .about__prices .about__price small {
+  font-size: 15px;
+}
+.about .about__inner .btns {
+  display: flex;
+  justify-content: space-between;
+  margin: 95px auto 0;
+  width: 468px;
+}
+.about .about__inner .btns .btn {
+  width: 170px;
+  height: 40px;
+  background: #d2d2d2;
+  border: 1px solid #b1b1b1;
+  font-size: 14px;
+}
+.about .about__inner .btns .btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+footer {
+  margin: 86px 0 0 0;
+  padding-bottom: 30px;
+  text-align: center;
+  font-family: fot-matisse-pron, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+}
+#loading__animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20000;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+#loading__animation .cow {
+  position: absolute;
+  top: calc(50% - 20vmin - 30px);
+  left: calc(50% - 20vmin);
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  flex-wrap: wrap;
+  width: 40vmin;
+  height: 80vmin;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+#loading__animation .cow span {
+  display: block;
+  width: 25%;
+  height: 50%;
+  background-image: url("/img/cow.svg");
+  background-size: 400% 400%;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+#loading__animation .cow span:nth-child(1) {
+  background-position: 0% center;
+}
+#loading__animation .cow span:nth-child(2) {
+  background-position: 34% center;
+}
+#loading__animation .cow span:nth-child(3) {
+  background-position: 67% center;
+}
+#loading__animation .cow span:nth-child(4) {
+  background-position: 100% center;
+}
+#loading__animation .meat {
+  position: absolute;
+  top: calc(50% - 20vmin - 10px);
+  left: calc(50% - 10vmin);
+  display: flex;
+  padding-top: 100px;
+  flex-wrap: wrap;
+  width: 20vmin;
+  height: 40vmin;
+}
+#loading__animation .meat span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("/img/steak_1.svg");
+  background-repeat: no-repeat;
+  opacity: 0;
+  transform: scale(0);
+}
+#loading__animation .steak {
+  position: absolute;
+  top: calc(50% - 20vmin - 10px);
+  left: calc(50% - 10vmin);
+  display: flex;
+  padding-top: 100px;
+  flex-wrap: wrap;
+  width: 20vmin;
+  height: 40vmin;
+}
+#loading__animation .steak span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("/img/steak_2.svg");
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+#loading__animation .smoke {
+  position: absolute;
+  top: calc(50% - 20vmin - 30px);
+  left: calc(50% - 5vmin);
+  display: flex;
+  padding-top: 100px;
+  flex-wrap: wrap;
+  width: 20vmin;
+  height: 40vmin;
+}
+#loading__animation .smoke span {
+  display: block;
+  width: 50%;
+  height: 50%;
+  background-image: url("/img/effect.svg");
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+#loading__animation {
+  animation: fadeout--animation 1.2s ease 9.8s forwards;
+}
+#loading__animation .cow span:nth-child(odd) {
+  animation: fadein 1.5s ease 0s forwards, fadeout 1s ease 2.5s forwards;
+}
+#loading__animation .cow span:nth-child(even) {
+  animation: fadein 1.5s ease 0s forwards, fadeout 1s ease 2.5s forwards;
+}
+#loading__animation .cow span:nth-child(3) {
+  animation: fadein 1.5s ease 0s forwards, trans_down 2s ease 1.5s forwards, fadeout 1s ease 2.5s forwards;
+}
+#loading__animation .meat span {
+  animation: fadein 1.5s ease 3s forwards, trans_big 1s ease 3.5s forwards, trans_deg 1.5s ease 4.5s forwards, fadeout 3s ease 6s forwards;
+}
+#loading__animation .steak span {
+  animation: fadein 1s ease 6.3s forwards, fadeout 1s ease 9s forwards;
+}
+#loading__animation .smoke span {
+  animation: fadein 1s ease 6.3s forwards, trans_up 4s ease 6.3s forwards, fadeout 1s ease 7.5s forwards;
+}

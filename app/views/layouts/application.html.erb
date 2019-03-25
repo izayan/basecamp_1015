@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>1015BASECAMP</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <% self_css_path = "/assets/"+controller.controller_name  %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
